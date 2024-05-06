@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(46, 44, 46);">
+
+    <head>Promise in Javascript</head>
+    <script>
+        function promo(a, b) {
+            let c = a / b;
+            return new Promise((resole, reject) => {
+                console.log("Data fetching ,Please wait...")
+                setTimeout(() => {
+                    if (a, b) {
+                        console.log(`I am successufull: ${c}`);
+                    }
+                    else {
+                        reject(`Failed can't calculate the result..`)
+                    }
+                }, 3000);
+            });
+        }
+        promo(20, 2).then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        })
+    </script>
+</body>
+
+</html>
